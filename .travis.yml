@@ -18,7 +18,7 @@ script:
 after_success:
   - if [[ $TRAVIS_TAG =~ ^website.*$ ]] && [ "$TRAVIS_JDK_VERSION" == "oraclejdk8" ]; then chmod +x ./.github/website.sh; .github/website.sh; fi
   - if [[ $TRAVIS_TAG =~ ^v.*$ ]] && [ "$TRAVIS_PULL_REQUEST" == "false" ] && [ "$TRAVIS_JDK_VERSION" == "oraclejdk8" ]; then chmod +x ./.github/website.sh; .github/website.sh; fi
-  - ./gradlew test jacocoTestReport coveralls
+  - mvn clean cobertura:cobertura org.eluder.coveralls:coveralls-maven-plugin:report
 # secure keys for GITHUB_TOKEN
 env:
   global:

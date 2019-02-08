@@ -1,6 +1,6 @@
 Joda-Time
 ---------
-![Build Status](https://travis-ci.org/sainzatoledano/joda-time.png?branch=master)](https://travis-ci.org/sainzatoledano}/joda-time)
+
 
 Joda-Time provides a quality replacement for the Java date and time classes.
 The design allows for multiple calendar systems, while still providing a simple API.
@@ -39,7 +39,11 @@ public String getBirthMonthText(LocalDate dateOfBirth) {
 ```
 
 Joda-Time is licensed under the business-friendly [Apache 2.0 licence](https://www.joda.org/joda-time/licenses.html).
+### Continuos Integration
+![Build Status](https://travis-ci.org/sainzatoledano/joda-time.png?branch=master)](https://travis-ci.org/sainzatoledano}/joda-time)
 
+### Coverage Status
+![Coverage Status](https://coveralls.io/repos/sainzatoledano/joda-time/badge.png)] (https://coveralls.io/r/sainzatoleldano/joda-time)	
 
 ### Documentation
 Various documentation is available:

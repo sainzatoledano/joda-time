@@ -1,5 +1,6 @@
 Joda-Time
 ---------
+![Build Status](https://travis-ci.org/sainzatoledano/joda-time.png?branch=master)](https://travis-ci.org/sainzatoledano}/joda-time)
 
 Joda-Time provides a quality replacement for the Java date and time classes.
 The design allows for multiple calendar systems, while still providing a simple API.

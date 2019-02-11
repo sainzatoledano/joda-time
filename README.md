@@ -40,7 +40,7 @@ public String getBirthMonthText(LocalDate dateOfBirth) {
 
 Joda-Time is licensed under the business-friendly [Apache 2.0 licence](https://www.joda.org/joda-time/licenses.html).
 ### Continuos Integration
-![Build Status](https://travis-ci.org/sainzatoledano/joda-time.png?branch=master)(https://travis-ci.org/sainzatoledano}/joda-time)
+![Build Status](https://travis-ci.org/sainzatoledano/joda-time.png?branch=master)(https://travis-ci.org/sainzatoledano/joda-time)
 
 ### Coverage Status
 ![Coverage Status](https://coveralls.io/repos/sainzatoledano/joda-time/badge.png) (https://coveralls.io/r/sainzatoleldano/joda-time)	

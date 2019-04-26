@@ -759,6 +759,20 @@
       <version>4.12</version>
       <scope>test</scope>
     </dependency>
+     <!-- Pruebas generacion aleatoria de datos -->
+           <!-- https://mvnrepository.com/artifact/com.pholser/junit-quickcheck-core -->
+		<dependency>
+		    <groupId>com.pholser</groupId>
+		    <artifactId>junit-quickcheck-core</artifactId>
+		    <version>0.8.2</version>
+		    <scope>test</scope>
+		</dependency>       
+           <!-- Pruebas basadas en modelos -->
+           <dependency>
+		   <groupId>org.graphwalker</groupId>
+		   <artifactId>graphwalker-core</artifactId>
+		   <version>3.4.2</version>
+		</dependency>
   </dependencies>
 
   <!-- ==================================================================== -->

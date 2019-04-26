@@ -40,6 +40,7 @@ public class TestAllPackages extends TestCase {
         suite.addTest(org.joda.time.field.TestAll.suite());
         suite.addTest(org.joda.time.format.TestAll.suite());
         suite.addTest(org.joda.time.tz.TestAll.suite());
+        suite.addTest(org.joda.time.converters.TestAll.suite());
         return suite;
     }
 

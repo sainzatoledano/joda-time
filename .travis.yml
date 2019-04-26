@@ -4,7 +4,8 @@ sudo: false
 language: java
 jdk:
   - oraclejdk8
-  - openjdk7
+  #Se ha eliminado de la configuracion la construccion con oracle 7 debido a que no soportaba
+  #el generador de tipos realizado para la prueba de datos aleatorio
 cache:
   directories:
     - "$HOME/.m2/repository"

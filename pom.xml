@@ -11,7 +11,7 @@
   <version>2.10.2-SNAPSHOT</version>
   <description>Date and time library to replace JDK date handling</description>
   <url>https://www.joda.org/joda-time/</url>
-
+  
   <!-- ==================================================================== -->
   <issueManagement>
     <system>GitHub</system>
@@ -713,6 +713,29 @@
         		</targetTests>
     		</configuration>
  		</plugin>
+ 		<!-- Ghaphwalker -->
+ 		 <plugin>
+	        <groupId>org.graphwalker</groupId>
+	        <artifactId>graphwalker-maven-plugin</artifactId>
+	        <version>${graphwalker.version}</version>
+	        <!-- Bind goals to the default lifecycle -->
+	        <executions>
+	          <execution>
+	            <id>generate-test-sources</id>
+	            <phase>generate-test-sources</phase>
+	            <goals>
+	              <goal>generate-test-sources</goal>
+	            </goals>
+	          </execution>
+	          <execution>
+	            <id>test</id>
+	            <phase>test</phase>
+	            <goals>
+	              <goal>test</goal>
+	            </goals>
+	          </execution>
+	        </executions>
+      </plugin>
         <!--This plugin's configuration is used to store Eclipse m2e settings only. It has no influence on the Maven build itself.-->
         <plugin>
           <groupId>org.eclipse.m2e</groupId>
@@ -757,7 +780,7 @@
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
       <version>4.12</version>
-      <scope>test</scope>
+<!--       <scope>test</scope> -->
     </dependency>
      <!-- Pruebas generacion aleatoria de datos -->
            <!-- https://mvnrepository.com/artifact/com.pholser/junit-quickcheck-core -->
@@ -768,11 +791,26 @@
 		    <scope>test</scope>
 		</dependency>       
            <!-- Pruebas basadas en modelos -->
-           <dependency>
-		   <groupId>org.graphwalker</groupId>
-		   <artifactId>graphwalker-core</artifactId>
-		   <version>3.4.2</version>
-		</dependency>
+	 	<dependency>
+	      <groupId>org.graphwalker</groupId>
+	      <artifactId>graphwalker-core</artifactId>
+	      <version>${graphwalker.version}</version>
+	    </dependency>
+	    <dependency>
+	      <groupId>org.graphwalker</groupId>
+	      <artifactId>graphwalker-io</artifactId>
+	      <version>${graphwalker.version}</version>
+	    </dependency>
+	    <dependency>
+	      <groupId>org.graphwalker</groupId>
+	      <artifactId>graphwalker-java</artifactId>
+	      <version>${graphwalker.version}</version>
+	    </dependency>
+	    <dependency>
+	      <groupId>org.graphwalker</groupId>
+	      <artifactId>graphwalker-maven-plugin</artifactId>
+	      <version>${graphwalker.version}</version>
+	    </dependency>
   </dependencies>
 
   <!-- ==================================================================== -->
@@ -1036,6 +1074,7 @@
   <!-- ==================================================================== -->
   <properties>
     <!-- Plugin version numbers -->
+   <graphwalker.version>3.4.2</graphwalker.version>
     <build-helper-maven-plugin.version>3.0.0</build-helper-maven-plugin.version>
     <maven-assembly-plugin.version>3.1.0</maven-assembly-plugin.version>
     <maven-changes-plugin.version>2.12.1</maven-changes-plugin.version>

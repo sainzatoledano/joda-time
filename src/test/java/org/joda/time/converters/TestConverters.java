@@ -1,7 +1,5 @@
 package org.joda.time.converters;
 
-import static org.junit.Assert.assertEquals;
-
 import org.joda.time.DateTime;
 import org.joda.time.chrono.BuddhistChronology;
 import org.joda.time.chrono.GregorianChronology;
